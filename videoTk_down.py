@@ -35,7 +35,7 @@ def onClick():
     video = yt.streams.filter(file_extension="mp4", res="720p").first()
 
     try:
-        video.download("/Users/lucaspercussao/Documents/videosYT/", f"{name}.mp4")
+        video.download("/Users/Documents/videosYT/", f"{name}.mp4")
         messagebox.showinfo("Succes", "Video File created at: Documents/videosYT")
         
     except:
